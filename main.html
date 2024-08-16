@@ -7,50 +7,45 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
         nav {
             background-color: #333;
             padding: 10px;
-            margin-bottom: 20px;
         }
         nav ul {
             list-style-type: none;
-            padding: 0;
             margin: 0;
-            text-align: center;
+            padding: 0;
         }
         nav ul li {
             display: inline;
-            margin-right: 10px;
+            margin-right: 20px;
         }
         nav ul li a {
             color: white;
             text-decoration: none;
-            padding: 5px 10px;
         }
         nav ul li a:hover {
-            background-color: #555;
+            text-decoration: underline;
         }
         .audio-section {
-            max-width: 600px;
-            margin: 0 auto;
+            margin: 20px;
         }
         .audio-section h2 {
-            text-align: center;
+            font-size: 24px;
             margin-bottom: 20px;
         }
-        .audio-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .audio-list-item {
+        .audio-section audio {
+            display: block;
             margin-bottom: 10px;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -59,29 +54,21 @@
         </ul>
     </nav>
 
+    <!-- Audio Section -->
     <section class="audio-section">
-        <h2>3 random audios</h2>
-        <ul class="audio-list">
-            <li class="audio-list-item">
-                <audio controls>
-                    <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </li>
-            <li class="audio-list-item">
-                <audio controls>
-                    <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-                    Your browser does not support the audio element.
-                </audio>
-            </li>
-            <li class="audio-list-item">
-                <audio controls>
-                    <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </li>
-        </ul>
+        <h2>3 Random Audios</h2>
+        <audio controls>
+            <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls>
+            <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls>
+            <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
     </section>
-
 </body>
 </html>
